@@ -76,3 +76,8 @@ D:\source\repos\UWPAssignment\UWPAssignment\obj\x86\Debug\resources.en.resfiles
 D:\source\repos\UWPAssignment\UWPAssignment\obj\x86\Debug\resources.en.resfiles.intermediate
 D:\source\repos\UWPAssignment\UWPAssignment\obj\x86\Debug\SQLitePCL.Ext.pri.xml
 D:\source\repos\UWPAssignment\UWPAssignment\bin\x86\Debug\sqlite3.dll
+D:\source\repos\UWPAssignment\UWPAssignment\bin\x86\Debug\Pages\CreateSong.xbf
+D:\source\repos\UWPAssignment\UWPAssignment\obj\x86\Debug\Pages\CreateSong.g.i.cs
+D:\source\repos\UWPAssignment\UWPAssignment\obj\x86\Debug\Pages\CreateSong.g.cs
+D:\source\repos\UWPAssignment\UWPAssignment\obj\x86\Debug\Pages\CreateSong.xaml
+D:\source\repos\UWPAssignment\UWPAssignment\obj\x86\Debug\Pages\CreateSong.xbf

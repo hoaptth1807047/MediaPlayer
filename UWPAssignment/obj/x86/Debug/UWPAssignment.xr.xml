@@ -9,8 +9,8 @@
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
       <RootProperty Name="Background" />
       <RootProperty Name="Content" />
-      <RootProperty Name="NavigationCacheMode" />
       <RootProperty Name="Resources" />
+      <RootProperty Name="NavigationCacheMode" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.VisualStateManager">
       <RootMethod Name="GetVisualStateGroups" />
@@ -80,8 +80,8 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Text" />
       <RootProperty Name="FontSize" />
-      <RootProperty Name="FontWeight" />
       <RootProperty Name="Inlines" />
+      <RootProperty Name="FontWeight" />
       <RootProperty Name="Visibility" />
       <RootEvent Name="SelectionChanged" />
     </RootType>
@@ -100,10 +100,24 @@
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="UWPAssignment.MainPage" />
+    <RootType FullName="Windows.UI.Xaml.FrameworkElement">
+      <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
+      <RootProperty Name="Content" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
       <RootProperty Name="Children" />
       <RootProperty Name="Orientation" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="UWPAssignment.Pages.CreateSong" />
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
       <RootProperty Name="ItemTemplate" />
     </RootType>
@@ -136,16 +150,6 @@
       <RootProperty Name="ImageSource" />
     </RootType>
     <RootType FullName="UWPAssignment.Pages.ListSongPage" />
-    <RootType FullName="Windows.UI.Xaml.FrameworkElement">
-      <RootProperty Name="Margin" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox" />
-    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
-      <RootProperty Name="Height" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
-      <RootProperty Name="Width" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.HyperlinkButton">
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Content" />
@@ -160,9 +164,6 @@
       <RootProperty Name="Tag" />
       <RootProperty Name="IsChecked" />
       <RootEvent Name="Checked" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
-      <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Image">
       <RootProperty Name="HorizontalAlignment" />

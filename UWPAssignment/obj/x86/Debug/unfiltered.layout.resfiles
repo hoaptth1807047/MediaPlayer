@@ -10,6 +10,7 @@ Assets\Wide310x150Logo.scale-200.png
 App.xbf
 Demo\NavigationViewDemo.xbf
 MainPage.xbf
+Pages\CreateSong.xbf
 Pages\ListSongPage.xbf
 Pages\LoginPage.xbf
 Pages\RegisterPage.xbf

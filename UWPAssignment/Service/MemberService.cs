@@ -28,7 +28,7 @@ namespace UWPAssignment.Service
             // ép kiểu kết quả từ dữ liệu json sang dữ liệu của C#
             var responseMember = JsonConvert.DeserializeObject<Member>(jsonContent);
             // in ra id của member trả về.
-            Debug.WriteLine("Register success with id: " + responseMember.id);
+            Debug.WriteLine("Register success with id: " + responseMember.Id);
             return responseMember;
         }
 

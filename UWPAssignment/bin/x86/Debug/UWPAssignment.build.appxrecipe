@@ -88,6 +88,9 @@
     <AppxPackagedFile Include="D:\source\repos\UWPAssignment\UWPAssignment\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\source\repos\UWPAssignment\UWPAssignment\bin\x86\Debug\Pages\CreateSong.xbf">
+      <PackagePath>Pages\CreateSong.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\source\repos\UWPAssignment\UWPAssignment\bin\x86\Debug\Pages\ListSongPage.xbf">
       <PackagePath>Pages\ListSongPage.xbf</PackagePath>
     </AppxPackagedFile>

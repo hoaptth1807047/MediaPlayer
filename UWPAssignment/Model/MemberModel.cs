@@ -52,7 +52,7 @@ namespace UWPAssignment.Model
                         list.Add(new Member()
                         {
                             Email = (string)statement[1],
-                            Name = (string)statement[2],
+                            LastName = (string)statement[2],
                         });
                     }
                 }

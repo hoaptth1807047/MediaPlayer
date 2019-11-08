@@ -53,39 +53,16 @@ namespace UWPAssignment.Pages
             if (memberCredential != null)
             {
                 var member = this._memberService.GetInformation(memberCredential.token);
+                FirstName.Text = member.FirstName;
+                LastName.Text = member.LastName;
                 Email.Text = member.Email;
-                Name.Text = member.FirstName + " " + member.LastName;
+                Phone.Text = member.Phone;
+                Address.Text = member.Address;
+                Introduction.Text = member.Introduction;
+                Gender.Text = member.Gender == 1 ? "Male" : (member.Gender == 0 ? "Female" : "Other");
+                Birthday.Text = member.Birthday;
             }
-            LoadDatabase();
         }
 
-        private void LoadDatabase()
-        {
-            
-            var conn = new SQLiteConnection("sqlitepcldemo.db");
-            string sql =
-                @"CREATE TABLE IF NOT EXISTS Customer (Id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,Name VARCHAR( 140 ),City VARCHAR( 140 ),Contact VARCHAR( 140 ));";
-            using (var statement = conn.Prepare(sql))
-            {
-                statement.Step();
-            }
-
-            try
-            {
-                using (var custstmt = conn.Prepare("INSERT INTO Customer (Name, City, Contact) VALUES (?, ?, ?)"))
-                {
-                    custstmt.Bind(1, "Hung");
-                    custstmt.Bind(2, "hanoi");
-                    custstmt.Bind(3, "alo");
-                    custstmt.Step();
-                }
-
-            }
-            catch (Exception ex)
-            {
-                // TODO: Handle error
-            }
-
-        }
     }
 }

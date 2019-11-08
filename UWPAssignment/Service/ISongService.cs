@@ -11,6 +11,6 @@ namespace UWPAssignment.Service
     {
         Song CreateSong(MemberCredential memberCredential, Song song);
         List<Song> GetAllSong(MemberCredential memberCredential);
-        List<Song> GetMineSongs();
+        List<Song> GetMineSongs(MemberCredential memberCredential);
     }
 }
