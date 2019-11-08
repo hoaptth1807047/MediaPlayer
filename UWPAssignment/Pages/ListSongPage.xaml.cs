@@ -25,7 +25,8 @@ namespace UWPAssignment.Pages
     { 
         static ObservableCollection<Song> ListSong;
         static bool refresh = true; 
-        bool running = false;
+        private bool running = false;
+        private int currentIndex = 0;
         private ISongService _songService;
         public ListSongPage()
         {
@@ -67,10 +68,13 @@ namespace UWPAssignment.Pages
         private void UIElement_OnDoubleTapped(object sender, DoubleTappedRoutedEventArgs e)
         {
             var playIcon = sender as SymbolIcon;
-            var currentSong = playIcon.Tag as Song;
-            Debug.WriteLine(currentSong.name);
-            MyMediaElement.Source = new Uri(currentSong.link);
-            NowPlayingText.Text = "Now Playing: " + currentSong.name + " - " + currentSong.singer;
+            if (playIcon != null)
+            {
+                var currentSong = playIcon.Tag as Song;
+                Debug.WriteLine(currentSong.name);
+                MyMediaElement.Source = new Uri(currentSong.link);
+                NowPlayingText.Text = "Now playing: " + currentSong.name + " - " + currentSong.singer;
+            }
             MyMediaElement.Play();
             PlayAndPauseButton.Icon = new SymbolIcon(Symbol.Pause);
             running = true;
@@ -94,12 +98,29 @@ namespace UWPAssignment.Pages
 
         private void Back(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+            currentIndex -= 1;
+            if (currentIndex < 0)
+            {
+                currentIndex = ListSong.Count - 1;
+            }
+            var song = ListSong[currentIndex];
+            ListViewSong.SelectedIndex = currentIndex;
+            MyMediaElement.Source = new Uri(song.link);
+            NowPlayingText.Text = "Now playing: " + song.name + " - " + song.singer;
         }
 
         private void Next(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+            currentIndex += 1;
+            if (currentIndex >= ListSong.Count)
+            {
+                currentIndex = 0;
+            }
+            var song = ListSong[currentIndex];
+            ListViewSong.SelectedIndex = currentIndex;
+            MyMediaElement.Source = new Uri(song.link);
+            NowPlayingText.Text = "Now playing: " + song.name + " - " + song.singer;
+            MyMediaElement.Play();
         }
     }
 }

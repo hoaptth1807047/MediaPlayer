@@ -18,6 +18,7 @@ namespace UWPAssignment.Service
             throw new NotImplementedException();
         }
 
+
         public List<Song> GetAllSong(MemberCredential memberCredential)
         {
             var httpClient = new HttpClient();

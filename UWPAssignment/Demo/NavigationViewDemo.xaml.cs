@@ -47,7 +47,7 @@ namespace UWPAssignment.Demo
         private readonly List<(string Tag, Type Page)> _pages = new List<(string Tag, Type Page)>
         {
         ("now", typeof(LoginPage)),
-        ("recent", typeof(RegisterPage)),
+        ("recent", typeof(LoginPage)),
         ("list", typeof(ListSongPage)),
         ("add", typeof(LoginPage)),
         ("user", typeof(LoginPage)),

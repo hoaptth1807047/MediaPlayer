@@ -27,20 +27,13 @@
             </ListView.ItemTemplate>
         </ListView>
         <CommandBar>
-            <!--<AppBarToggleButton Icon="Shuffle" Label="Shuffle" Click="AppBarButton_Click" />
-            <AppBarToggleButton Icon="RepeatAll" Label="Repeat" Click="AppBarButton_Click"/>-->
             <AppBarSeparator/>
             <AppBarButton Icon="Back" Label="Back" Click="Back"/>
             <AppBarButton Icon="Play" x:Name="PlayAndPauseButton"  Label="Play" Click="Play"/>
             <AppBarButton Icon="Forward" Label="Forward" Click="Next"/>
 
-            <!--<CommandBar.SecondaryCommands>
-                <AppBarButton Label="Like" Click="AppBarButton_Click"/>
-                <AppBarButton Label="Dislike" Click="AppBarButton_Click"/>
-            </CommandBar.SecondaryCommands>-->
-
             <CommandBar.Content>
-                <TextBlock x:Name="NowPlayingText"  Margin="12,14"/>
+                <TextBlock x:Name="NowPlayingText" Text="Now playing..." Margin="12,14"/>
             </CommandBar.Content>
         </CommandBar>
         <MediaElement x:Name="MyMediaElement"></MediaElement>

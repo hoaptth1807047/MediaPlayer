@@ -14,7 +14,7 @@ namespace UWPAssignment.Entity
             "https://2-dot-backup-server-003.appspot.com/_api/v2/members/authentication";
         public const string MEMBER_GET_INFORMATION = "https://2-dot-backup-server-003.appspot.com/_api/v2/members/information";
         public const string SONG_CREATE_URL = "https://2-dot-backup-server-003.appspot.com/_api/v2/songs";
-        public const string SONG_GET_ALL = "https://2-dot-backup-server-003.appspot.com/_api/v2/songs";
+        public const string SONG_GET_ALL = "https://2-dot-backup-server-001.appspot.com/_api/v2/songs";
         public const string SONG_GET_MINE = "https://2-dot-backup-server-003.appspot.com/_api/v2/songs/get-mine";
         public static MemberCredential CurrentMemberCredential;
     }

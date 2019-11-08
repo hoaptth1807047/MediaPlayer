@@ -53,8 +53,8 @@ namespace UWPAssignment.Pages
             if (memberCredential != null)
             {
                 var member = this._memberService.GetInformation(memberCredential.token);
-                Email.Text = member.email;
-                Name.Text = member.firstName + " " + member.lastName;
+                Email.Text = member.Email;
+                Name.Text = member.FirstName + " " + member.LastName;
             }
             LoadDatabase();
         }

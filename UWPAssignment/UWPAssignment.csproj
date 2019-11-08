@@ -131,6 +131,7 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Model\MemberModel.cs" />
     <Compile Include="Pages\ListSongPage.xaml.cs">
       <DependentUpon>ListSongPage.xaml</DependentUpon>
     </Compile>
@@ -150,6 +151,7 @@
     <Compile Include="Service\LocalFileService.cs" />
     <Compile Include="Service\MemberService.cs" />
     <Compile Include="Service\SongService.cs" />
+    <Compile Include="Utils\SQLiteUtil.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">

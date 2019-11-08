@@ -51,21 +51,21 @@ namespace UWPAssignment.Pages
 
             var member = new Member
             {
-                firstName = this.FirstName.Text,
-                lastName = this.LastName.Text,
-                avatar = AvatarUrl.Text,
-                phone = this.Phone.Text,
-                address = this.Address.Text,
-                introduction = this.Introduction.Text,
-                email = this.Email.Text,
-                gender = _gender.Equals("Male") ? 1 : (_gender.Equals("Female") ? 0 : 2),
-                birthday = birthday,
-                password = this.Password.Password
+                FirstName = this.FirstName.Text,
+                LastName = this.LastName.Text,
+                Avatar = AvatarUrl.Text,
+                Phone = this.Phone.Text,
+                Address = this.Address.Text,
+                Introduction = this.Introduction.Text,
+                Email = this.Email.Text,
+                Gender = _gender.Equals("Male") ? 1 : (_gender.Equals("Female") ? 0 : 2),
+                Birthday = birthday,
+                Password = this.Password.Password
             };
             var responseMember = this._memberService.Register(member);
             if (responseMember != null)
             {
-                Debug.WriteLine("Register success with id: " + responseMember.id);
+                Debug.WriteLine("Register success with id: " + responseMember.Id);
             }
             else
             {
